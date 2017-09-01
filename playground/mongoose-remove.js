@@ -5,4 +5,6 @@ const {User} = require('./../server/models/user');
 
 Todo.remove({}).then((result) => {
 	console.log(result);	
-})
+});
+
+Todo.findByIdAndRemove('asss').then
