@@ -95,7 +95,7 @@ describe('GET /todos/:id', () => {
 
   it('should return 404 for non-object ids', (done) => {
     request(app)
-      .get(`/todos/123abc`)
+      .get('/todos/123abc')
       .expect(404)
       .end(done);
   });
